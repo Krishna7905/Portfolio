@@ -279,6 +279,74 @@
    /* Brackets in green */
  }
 
+ /* Base styling for code container */
+.Code {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-end;
+   justify-content: flex-end;
+   height: 90%;
+   width: 95%;
+}
+
+/* Right content container */
+.right-container {
+   flex: 0 0 40%;
+   height: 90%;
+   overflow-y: auto;
+}
+
+/* Code block styling */
+.code-block {
+   border: 1px solid #2beb45;
+   background-color: #03103b;
+   color: #2beb45;
+   font-size: 18px;
+   height: calc(100% - 50px);
+   overflow-x: auto; /* Allows horizontal scrolling */
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+   .Code {
+     width: 120%;
+        height: auto;
+        align-items: center;
+        margin-left: -30%;
+        justify-content: center;
+   }
+
+   .right-container {
+      width: 50%; /* Make container wider for better readability */
+      height: auto; /* Reduce height */
+      margin: 10px auto;
+   }
+
+   .code-block {
+      font-size: 16px; /* Slightly smaller font for mobile */
+      padding: 12px;
+      height: auto; /* Fit content */
+      overflow-y: auto; /* Allow scrolling when needed */
+   }
+}
+
+@media (max-width:648px){
+  .Code{
+    width: 180%;
+    margin-left: -50%;
+  }
+}
+@media (max-width: 618px){
+  
+  .Code{
+
+    width: 150%;
+    /* margin-left: -10%; */
+  }
+  .code-block{
+    font-size: 14px;
+  }
+}
  /* about me  */
 
 
